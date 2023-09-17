@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """class Rectangle that inherits from BaseGeometry"""
+
 class Rectangle(BaseGeometry):
 	"""Represent a rectangle using BaseGeometry."""
 	def __init__(self, width, height):
