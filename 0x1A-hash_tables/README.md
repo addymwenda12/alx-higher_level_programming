@@ -23,24 +23,22 @@ class HashTable:
 
     def get(self, key):
         index = self.hash(key)
-                                                                        return self.table[index]
-                                                                        ```
+        return self.table[index]
 
-                                                                        ## Usage
+## Usage
 
 To use the hash table, we first need to create an instance of the `HashTable` class. We then use the `set()` method to add key-value pairs to the table. The `get()` method can be used to retrieve the value associated with a given key.
 
 The following example shows how to use the hash table:
 
-        ```python
-                                                                        hash_table = HashTable(10)
+```python
+hash_table = HashTable(10)
+hash_table.set("name", "John Doe")
+hash_table.set("age", 30)
 
-                                                                        hash_table.set("name", "John Doe")
-                                                                        hash_table.set("age", 30)
-
-                                                                        print(hash_table.get("name"))  # Output: John Doe
-                                                                        print(hash_table.get("age"))  # Output: 30
-                                                                        ```
+print(hash_table.get("name"))  # Output: John Doe
+print(hash_table.get("age"))  # Output: 30
+```
 ## Collision Handling
 
 When two keys hash to the same location in the table, a collision occurs. There are several ways to handle collisions, such as:
