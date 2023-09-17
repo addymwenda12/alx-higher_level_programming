@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""class Square that inherits from Rectangle"""
 
 class Square(Rectangle):
+    """Implementation of Rectangle"""
     def __init__(self, size):
         self.__size = 0  # Initialize size to 0
         self.integer_validator("size", size)  # Validate and set size
