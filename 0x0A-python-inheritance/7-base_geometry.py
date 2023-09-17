@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
+"""Public instance method that raise an Exception and validates a value"""
 class BaseGeometry:
+	"""Validates a value"""
 	def area(self):
 		raise Exception("area() is not implemented")
 	
