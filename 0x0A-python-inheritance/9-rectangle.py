@@ -2,6 +2,7 @@
 """class Rectangle that inherits from BaseGeometry"""
 
 class Rectangle(BaseGeometry):
+    """Inheritation from BaseGeometry"""
     def __init__(self, width, height):
         self.__width = 0  # Initialize width to 0
         self.__height = 0  # Initialize height to 0
